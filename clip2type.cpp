@@ -8,6 +8,9 @@
 #include <cstdlib>
 #include <getopt.h>
 
+// the mapping formats below are:
+//   [char that we want] -> { [uinput key that needs to be hit to get that char, whether shift needs to be pressed] }
+
 // QWERTY key mapping
 std::map<char, std::pair<int, bool>> qwerty_key_mapping = {
     {'A', {KEY_A, true}},
