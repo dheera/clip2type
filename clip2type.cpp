@@ -12,11 +12,10 @@
 // the mapping formats below are:
 // [char that we want] -> { [uinput key that needs to be hit to get that char], [whether shift needs to be pressed] }
 
-constexpr std::pair<int, bool> default_key = {0, false};
-
 // QWERTY key mapping
 
 constexpr std::vector<std::pair<int, bool>> generate_qwerty_key_mapping() {
+    const std::pair<int, bool> default_key = {0, false};
     std::vector<std::pair<int, bool>> mapping(256, default_key);
 
     mapping['A'] = {KEY_A, true};
@@ -118,6 +117,7 @@ constexpr std::vector<std::pair<int, bool>> generate_qwerty_key_mapping() {
 }
 
 constexpr std::vector<std::pair<int, bool>> generate_dvorak_key_mapping() {
+    const std::pair<int, bool> default_key = {0, false};
     std::vector<std::pair<int, bool>> mapping(256, default_key);
 
     mapping['A'] = {KEY_A, true};
