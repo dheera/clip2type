@@ -10,7 +10,7 @@ If you have encountered any websites that don't let you paste things from the cl
 
 ... this is the solution. It takes the (text) contents of the keyboard, emulates a fake hardware USB keyboard on /dev/uinput and types out whatever is in the clipboard, so that the receiving application doesn't "know" it is being pasted into. It requires suid or sudo to work correctly.
 
-Supports qwerty and dvorak layouts (it is layout dependent since it is emulating actual **keystrokes**on /dev/uinput and so it needs to know whether your UI is configured for qwerty or dvorak). If you have some other layout, edit it yourself.
+Supports qwerty and dvorak layouts (it is layout dependent since it is emulating hardware **keystrokes** on /dev/uinput and so it needs to know whether your UI is configured for qwerty or dvorak). If you have some other layout, edit it yourself.
 
 This should work on x11 and wayland, but I have only tested it on wayland.
 
