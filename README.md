@@ -14,4 +14,4 @@ Supports qwerty and dvorak layouts (it is layout dependent since it is emulating
 
 This should work on x11 and wayland, but I have only tested it on wayland.
 
-I personally just map /usr/bin/clip2type to Super+V in Ubuntu, do whatever you want.
+I personally just map `/usr/bin/clip2type -d 20` to Super+V in Ubuntu, do whatever you want.
