@@ -388,7 +388,7 @@ void send_keystrokes(const std::string& content, int fd, const std::vector<std::
 }
 
 int main(int argc, char* argv[]) {
-    int delay_ms = 1; // Default delay is 0 ms
+    int delay_ms = 20; // Default delay is 20 ms
     bool use_dvorak = false; // Default to QWERTY
 
     // Option parsing
